@@ -1,0 +1,198 @@
+/*-----------------------ALL----------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+body{
+	background-color: #474747;
+}
+a{
+	transition: 0.15s color;
+}
+a:hover{
+	color: #f6b02d;
+}
+.superContainer{
+	overflow: hidden;
+}
+/*----------------------HEADER----------------------*/
+header{
+	position: relative;
+	width: 100%;
+	z-index: 11;
+	display: flex;
+	background-color: #121212;
+	height: 115px;
+	flex-direction: column;	
+}
+header>nav{
+	width: 80%;
+	margin: auto;
+	height: 115px;
+}
+header > nav >ul{
+	height: 115px;
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	align-items: center;	
+}
+header > nav >ul>li>a{
+	font-size: 22px;
+}
+.big_name{
+	font-size: 56px;
+}
+/*--------------------NOVINKI+ROW+ITEMS------------------------*/
+.nov{
+	z-index: 1;
+	position: relative;
+	width: 80%;
+	display: block;
+	background-color: #343434;
+	margin: auto;	
+	border-radius: 50px;
+	margin-top: 5vh;
+	padding-bottom: 50px;
+	margin-bottom: 5vh;
+}
+.items_head{
+	z-index: 11;
+	margin: auto;
+	background-color: #121212;
+}
+.items_name{
+	display: flex;
+	height: 60px;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #f6b02d;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: auto;
+	margin-top: 50px;
+	width: 88%;
+}
+.item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.filmImg{
+	display: block;
+	width: 88%;
+	height: auto;
+	border-radius: 20px;
+}
+.description{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 88%;
+	background-color: #121212;
+	height: 8vh;
+	border-radius: 20px;
+	margin-top: 10px;
+	padding: 10px 0;
+}
+.filmAge{
+	font-weight: 100;
+}
+.filmName{
+	font-size: 20px;
+	font-weight: 300;
+	color: #ffdb98;
+}
+.buyBotton{
+	margin-top: 4%;
+	background-color: #121212;
+	width: 88%;
+	height: 5vh;
+	vertical-align: middle;
+	border-radius: 30px;
+}
+.buyBotton > a{
+	display: block;
+	position: relative;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 5vh;
+}
+/*------------------BESTSELLERS----------------------------*/
+.bestselers{
+	z-index: 1;
+	position: relative;
+	width: 80%;
+	display: block;
+	background-color: #343434;
+	margin: auto;
+	margin-top: 5vh;	
+	border-radius: 50px;
+	padding-bottom: 50px;
+}
+/*-----------------ABOUT-----------------------------*/
+.aboutService{
+	z-index: 1;
+	position: relative;
+	width: 80%;
+	display: block;
+	background-color: #343434;
+	margin: auto;
+	margin-top: 5vh;	
+	border-radius: 50px;
+}
+.aboutText{
+	margin: 2vh 10vh;	
+}
+.aboutText > p{
+	letter-spacing: 1px;
+	font-size: 20px;
+	line-height: 60px;
+	/*text-align: center;*/
+}
+.boldWord{
+	font-weight: 400;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #f6b02d;
+}
+.aboutBottom{
+	height: 60px;
+	background-color: #121212;
+}
+/*-----------------FOOTER-----------------------------*/
+footer{
+	display: flex;
+	margin-top: 8vh;
+	background-color: #121212;
+	height: 300px;
+}
+.wrap{
+	width: 80%;
+	display: inline-flex;
+	justify-content: space-between;
+	margin: auto;
+}
+.fSection{
+	line-height: 40px;
+	letter-spacing: 1px;
+}
+.fSection>p{
+	text-transform: uppercase;
+}
+#firstS>p{
+	display: inline;
+}
+#firstS{
+	vertical-align: middle;
+}

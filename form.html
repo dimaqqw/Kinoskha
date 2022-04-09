@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Покупка билета</title>
+	<link rel="stylesheet" href="form.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="superContainer">
+    <!----------------------------------HEADER------------------------------------>
+	<header>
+		<div class="wrap">
+			<a href="index.html" class="big_name">Kinoshka.by</a>
+			<ul class="menuBlock">
+				<li><a href="">КИНОТЕАТРЫ</a></li>
+				<li><a href="">ФИЛЬМЫ</a></li>
+				<li><a href="">ДЕТЯМ</a></li>
+				<li><a href="">ВОЙТИ</a></li>
+			</ul>
+			<div class="hamburger-menu">
+				<input id="menu__toggle" type="checkbox" />
+				<label class="menu__btn" for="menu__toggle">
+					<span></span>
+				</label>
+				<ul class="menu__box">
+				<li><a class="menu__item" href="#">КИНОТЕАТРЫ</a></li>
+				<li><a class="menu__item" href="#">ФИЛЬМЫ</a></li>
+				<li><a class="menu__item" href="#">ДЕТЯМ</a></li>
+				<li><a class="menu__item" href="#">ВОЙТИ</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="wrap" id="wrapForm">
+		<div class="items_head">
+			<p class="items_name">Оформление билета</p>
+		</div>
+		<form action="">
+			<ul>
+				<li>
+				  <label for="surname">Фамилия:</label>
+				  <input type="text" id="surname" name="user_surname">
+				</li>
+				<li>
+				  <label for="name">Имя:</label>
+				  <input type="text" id="name" name="user_name">
+				</li>
+				<li>
+				  <label for="patronymic">Отчество:</label>
+				  <input type="text" id="patronymic" name="user_patronymic">
+				</li>
+				<li>
+					<label for="mail">E-mail:</label>
+					<input type="text" id="mail" name="user_mail">
+				</li>
+				<li>
+					<label for="number">Номер:</label>
+					<input type="text" id="number" name="user_number">
+				</li>
+				<li class="button">
+					<button id="butt">Купить билет</button>
+				</li>
+			  </ul>
+			  <script>
+				let a = document.getElementById("butt");
+				console.log(a);
+				a.addEventListener('click', () => {
+					alert("Ожидайте звонка. Это займет не больше 3-х минут!")
+				});
+			  </script>
+		</form>
+	</div>
+	<!------------------------------------FOOTER---------------------------------->
+	<footer>
+		<div class="footerWrap">
+			<div id="firstS" class="fSection">
+				<p><a href="index.html">kinoshka.by</a></p>
+			</div>
+				<div class="fSection">
+					<p><a href="">Кинотеатры</a></p>
+					<ul>
+						<li><a href="">Мир</a></li>
+						<li><a href="">Октябрь	</a></li>
+						<li><a href="">Аврора</a></li>
+						<li><a href="">Титан</a></li>
+					</ul>
+				</div>
+				<div class="fSection">
+					<p>Связь</p>
+					<ul>
+						<li>kinoshka.by@mail.ru</li>
+						<li>МТС +375445577401</li>
+						<li>А1 +375295672980</li>
+					</ul>
+				</div>
+				<div class="fSection">
+					<p>Инфо</p>
+					<ul>
+						<li><a href="">Возврат билетов</a></li>
+						<li><a href="">Возврастной рейтинг</a></li>
+						<li><a href="">Покупка билетов</a></li>
+					</ul>
+				</div>	
+		</div>
+	</footer>
+</div>
+</body>
+</html>
