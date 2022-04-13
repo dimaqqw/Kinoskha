@@ -218,9 +218,11 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  width: 88%;
+  margin: 50px auto 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .mainContent {
@@ -230,12 +232,15 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 88%;
   margin: auto;
+}
+
+.image {
+  border-radius: 15px;
+}
+
+.mainImg {
+  width: 45%;
 }
 
 .mainDescription {
@@ -249,19 +254,13 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #121212;
-  height: 500px;
-  width: 80%;
   margin: 0 20px;
   text-align: center;
 }
 
 .mainDescription > p {
   font-size: 20px;
-}
-
-.image {
-  height: 500px;
-  border-radius: 15px;
+  padding: 0 20px;
 }
 
 .textDescription {
@@ -273,7 +272,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 500px;
 }
 
 .textDescription > p {
@@ -289,8 +287,8 @@ header {
 }
 
 .chIMG {
-  width: 500px;
-  height: 350px;
+  width: 33vw;
+  height: 23vw;
   margin: auto;
   -webkit-transition: -webkit-filter 0.15s;
   transition: -webkit-filter 0.15s;
@@ -381,11 +379,12 @@ figcaption {
 
 .dateBlock, .timeBlock {
   font-size: 2vh;
+  width: 88%;
 }
 
 .date {
-  height: 10vh;
-  width: 5vw;
+  height: 60px;
+  width: 11%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,6 +435,7 @@ figcaption {
           align-items: center;
   border-radius: 5vw;
   font-size: 3vh;
+  white-space: nowrap;
 }
 
 /*-----------------FOOTER-----------------------------*/
@@ -486,6 +486,7 @@ footer .footerWrap .fSection {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  white-space: nowrap;
 }
 
 footer .footerWrap .fSection ul {
@@ -504,5 +505,228 @@ footer .footerWrap .fSection ul {
 
 footer .footerWrap #firstS {
   text-transform: uppercase;
+}
+
+@media (max-width: 2566px) {
+  header .wrap .big_name {
+    font-size: 60px;
+  }
+  header .wrap ul li {
+    font-size: 32px;
+  }
+  .items_name {
+    font-size: 36px;
+  }
+  footer {
+    font-size: 32px;
+  }
+  .textDescription > p {
+    font-size: 32px;
+  }
+  .mainDescription > p {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1926px) {
+  header .wrap .big_name {
+    font-size: 60px;
+  }
+  header .wrap ul li {
+    font-size: 22px;
+  }
+  .buyBotton {
+    font-size: 20px;
+  }
+  footer {
+    font-size: 22px;
+  }
+  .textDescription > p {
+    font-size: 22px;
+  }
+  .mainDescription > p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1441px) {
+  header .wrap .big_name {
+    font-size: 40px;
+  }
+  header .wrap ul li {
+    font-size: 18px;
+  }
+  .items_name {
+    font-size: 20px;
+  }
+  .buyBotton {
+    font-size: 17px;
+  }
+  .textDescription > p {
+    font-size: 18px;
+  }
+  .mainDescription > p {
+    font-size: 18px;
+  }
+  figcaption {
+    font-size: 24px;
+  }
+  .buyButton {
+    font-size: 26px;
+  }
+  footer {
+    font-size: 20px;
+  }
+  .dateBlock, .timeBlock {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1273px) {
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 88%;
+    margin: 25px auto 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .row .mainContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .row .mainContent .mainImg {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .row .mainContent .mainImg .image {
+    margin: 0 auto;
+  }
+  .row .mainContent .mainDescription {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 20px auto;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 0;
+  }
+  .row .mainContent .textDescription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 25px 0;
+  }
+}
+
+@media (max-width: 769px) {
+  .menuBlock {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .filmPage {
+    padding-bottom: 30px;
+  }
+  .buyButton {
+    width: 28vh;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  .dateBlock, .timeBlock {
+    font-size: 12px;
+  }
+  footer {
+    height: 100%;
+    padding: 40px 0;
+  }
+  footer .footerWrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  footer .footerWrap .fSection {
+    width: 50%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  footer .footerWrap .fSection ul {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 426px) {
+  header .wrap .big_name {
+    font-size: 30px;
+  }
+  .items_name {
+    font-size: 14px;
+  }
+  .buyButton {
+    font-size: 9px;
+  }
+  .image {
+    width: 200px;
+  }
+  .dateSuperBlock {
+    margin-top: 30px;
+  }
+  .date {
+    height: 45px;
+  }
+  .mainDescription > p {
+    font-size: 10px;
+  }
+  .textDescription > p {
+    font-size: 12px;
+    line-height: 25px;
+  }
+  figcaption {
+    font-size: 18px;
+  }
+  .dateBlock, .timeBlock {
+    font-size: 9px;
+  }
 }
 /*# sourceMappingURL=films.css.map */
