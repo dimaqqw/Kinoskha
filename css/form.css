@@ -294,8 +294,8 @@ form ul li label {
 }
 
 button {
-  width: 15vw;
-  height: 5vh;
+  width: 33%;
+  height: 30px;
   background-color: #121212;
   border-radius: 10px;
   border: none;
@@ -328,6 +328,7 @@ footer {
   width: 100%;
   background-color: #121212;
   height: 300px;
+  font-size: 20px;
 }
 
 footer .footerWrap {
@@ -356,6 +357,7 @@ footer .footerWrap .fSection {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  white-space: nowrap;
 }
 
 footer .footerWrap .fSection ul {
@@ -374,5 +376,103 @@ footer .footerWrap .fSection ul {
 
 footer .footerWrap #firstS {
   text-transform: uppercase;
+}
+
+/*--------------------------------------------*/
+@media (max-width: 2566px) {
+  header .wrap .big_name {
+    font-size: 60px;
+  }
+  header .wrap ul li {
+    font-size: 32px;
+  }
+  .items_name {
+    font-size: 36px;
+  }
+  footer {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1926px) {
+  header .wrap .big_name {
+    font-size: 60px;
+  }
+  header .wrap ul li {
+    font-size: 22px;
+  }
+  footer {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1441px) {
+  header .wrap .big_name {
+    font-size: 40px;
+  }
+  header .wrap ul li {
+    font-size: 18px;
+  }
+  .items_name {
+    font-size: 30px;
+  }
+  footer {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 769px) {
+  .menuBlock {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  label {
+    font-size: 14px;
+  }
+  button {
+    font-size: 14px;
+  }
+  footer {
+    height: 100%;
+    padding: 40px 0;
+  }
+  footer .footerWrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footerWrap .fSection {
+    width: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px 0;
+  }
+  footer .footerWrap .fSection ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 426px) {
+  header .wrap .big_name {
+    font-size: 30px;
+  }
+  .items_name {
+    font-size: 20px;
+  }
+  label {
+    font-size: 10px;
+  }
+  button {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=form.css.map */

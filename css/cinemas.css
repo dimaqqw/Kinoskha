@@ -238,6 +238,7 @@ header {
   margin: auto;
   margin-top: 30px;
   background-color: #121212;
+  border-radius: 3vw;
 }
 
 .cinemas .cinemaItem .row {
@@ -245,7 +246,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 90%;
-  margin: 30px;
+  margin: 30px auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -256,7 +257,7 @@ header {
 
 .cinemas .cinemaItem .row img {
   width: 50%;
-  height: 350px;
+  height: auto;
 }
 
 .cinemas .cinemaItem .row .cinemaName {
@@ -266,7 +267,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 80px;
+  font-size: 180px;
   width: 50%;
 }
 
@@ -274,6 +275,7 @@ header {
   width: 90%;
   margin: auto;
   text-align: center;
+  font-size: 44px;
 }
 
 .cinemas .cinemaItem .description div {
@@ -345,5 +347,124 @@ footer .footerWrap .fSection ul {
 
 footer .footerWrap #firstS {
   text-transform: uppercase;
+}
+
+/*---------------------------------------------------*/
+@media (max-width: 2566px) {
+  header .wrap .big_name {
+    font-size: 60px;
+  }
+  header .wrap ul li {
+    font-size: 32px;
+  }
+  .items_name {
+    font-size: 46px;
+  }
+  footer {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1926px) {
+  header .wrap .big_name {
+    font-size: 60px;
+  }
+  header .wrap ul li {
+    font-size: 22px;
+  }
+  .cinemas .cinemaItem .row .cinemaName {
+    font-size: 120px;
+  }
+  .cinemas .cinemaItem .description {
+    font-size: 28px;
+  }
+  footer {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1441px) {
+  header .wrap .big_name {
+    font-size: 40px;
+  }
+  header .wrap ul li {
+    font-size: 18px;
+  }
+  .items_name {
+    font-size: 30px;
+  }
+  .cinemas .cinemaItem .row .cinemaName {
+    font-size: 60px;
+  }
+  .cinemas .cinemaItem .description {
+    font-size: 20px;
+  }
+  footer {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 769px) {
+  .menuBlock {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .cinemas .cinemaItem .row .cinemaName {
+    font-size: 34px;
+  }
+  .cinemas .cinemaItem .description {
+    font-size: 18px;
+  }
+  .cinemas .cinemaItem .description div {
+    margin: 20px 0;
+  }
+  .cinemas .cinemaItem .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cinemas .cinemaItem .row img {
+    width: 88%;
+  }
+  footer {
+    height: 100%;
+    padding: 40px 0;
+  }
+  footer .footerWrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footerWrap .fSection {
+    width: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px 0;
+  }
+  footer .footerWrap .fSection ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 426px) {
+  header .wrap .big_name {
+    font-size: 30px;
+  }
+  .cinemas .cinemaItem .row .cinemaName {
+    font-size: 28px;
+  }
+  .cinemas .cinemaItem .description {
+    font-size: 14 px;
+  }
 }
 /*# sourceMappingURL=cinemas.css.map */
