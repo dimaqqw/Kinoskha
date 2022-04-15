@@ -165,12 +165,13 @@ header{
 .item{
 	display: flex;
 	flex-direction: column;
+  justify-content: space-between;
 	align-items: center;
 }
 .filmImg{
 	display: block;
 	width: 88%;
-	height: auto;
+	height: 63%;
 	border-radius: 20px;
 }
 .description{
@@ -180,10 +181,11 @@ header{
 	justify-content: space-evenly;
 	width: 88%;
 	background-color: #121212;
-	height: 8vh;
+	height: 30%;
 	border-radius: 20px;
 	margin-top: 10px;
-	padding: 10px 0;
+	padding: 20px 0;
+	text-align: center;
 }
 .filmAge{
 	font-weight: 100;
@@ -195,18 +197,21 @@ header{
 }
 .buyBotton{
 	margin-top: 4%;
-	background-color: #121212;
-	width: 88%;
-	height: 5vh;
-	vertical-align: middle;
-	border-radius: 30px;
+  background-color: #121212;
+  width: 88%;
+  height: 10%;
+  padding: 1px 0;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .buyBotton > a{
 	display: block;
-	position: relative;
-	text-transform: uppercase;
-	text-align: center;
-	line-height: 5vh;
+  position: relative;
+  text-transform: uppercase;
+  padding: 15px 0;
+  white-space: nowrap;
 }
 /*-----------------FOOTER-----------------------------*/
 footer{
@@ -229,6 +234,7 @@ footer{
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+	  white-space: nowrap;
       ul{
         height: 80%;
         display: flex;
@@ -240,4 +246,183 @@ footer{
       text-transform: uppercase;
     }
   }
+/*-------------*/
+@media (max-width:2566px) {
+	header{
+		.wrap{
+			.big_name{
+				font-size: 60px;
+			}
+			ul{
+				li{
+					font-size: 32px;
+				}
+			}
+		}
+	}
+	.items_name{
+		font-size: 36px;
+	}
+	.item{
+		width: 22%;
+		.filmImg{
+			width: 88%;
+			max-width: 600px;
+		}
+	}
+	.description{
+		.filmAge{
+			font-size: 32px;
+		}
+		.filmName{
+			font-size: 36px;
+		}
+		.filmZhanr{
+			font-size: 32px;
+		}
+	}
+	.buyBotton{
+		font-size: 28px;
+	}
+	.aboutText p{
+		font-size: 34px;
+	}
+	footer{
+		font-size: 32px;
+	}
+}
+}
+@media (max-width:1926px) {
+	header{
+		.wrap{
+			.big_name{
+				font-size: 60px;
+			}
+			ul{
+				li{
+					font-size: 22px;
+				}
+			}
+		}
+	}
+	.description{
+		.filmAge{
+			font-size: 28px;
+		}
+		.filmName{
+			font-size: 24px;
+		}
+		.filmZhanr{
+			font-size: 22px;
+		}
+	}
+	.buyBotton{
+		font-size: 20px;
+	}
+	.aboutText p{
+		font-size: 22px;
+	}
+	footer{
+		font-size: 22px;
+	}
+}
+@media (max-width:1441px) {
+	header{
+		.wrap{
+			.big_name{
+				font-size: 40px;
+			}
+			ul{
+				li{
+					font-size: 18px;
+				}
+			}
+		}
+	}
+	.items_name{
+		font-size: 30px;
+	}
+	.item{
+		width: 25%;
+	}
+	.description{
+		.filmAge{
+			font-size: 24px;
+		}
+		.filmName{
+			font-size: 17px;
+		}
+		.filmZhanr{
+			font-size: 17px;
+		}
+	}
+	.buyBotton{
+		font-size: 13px;
+	}
+	.aboutText p{
+		font-size: 24px;
+		line-height: 48px;
+	}
+	footer{
+		font-size: 20px;
+	}
+}
+@media (max-width:769px) {
+	.menuBlock{
+		display: none;
+	}
+	.hamburger-menu{
+		display: block;
+	}
+	.row{
+		flex-wrap: wrap;
+		.item{
+			width: 50%;
+			margin-bottom: 30px;
+		}
+	}
+	.aboutText{
+		margin: 20px 50px;
+	}
+	.aboutText p{
+		font-size: 20px;
+		line-height: 40px;
+	}
+	footer{
+		height: 100%;
+		padding: 40px 0;
+		.footerWrap{
+			flex-direction: column;
+			align-items: center;
+			.fSection{
+				width: 50%;
+				align-items: center;
+				margin: 20px 0;
+				ul{
+					align-items: center;
+				}
+			}
+		}
+	}
+}
+@media (max-width:426px) {
+	.nov, .bestselers, .aboutService{
+		width: 90%;
+	}
+	.aboutText{
+		margin: 20px 20px;
+	}
+	.aboutText p{
+		font-size: 15px;
+		line-height: 25px;
+	}
+	header .wrap .big_name{
+		font-size: 30px;
+	}
+	.description .filmZhanr{
+		font-size: 14px;
+	}
+	.buyBotton > a {
+		font-size: 12px;
+	}
 }

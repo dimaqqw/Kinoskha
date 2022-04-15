@@ -236,6 +236,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -248,7 +251,7 @@ header {
 .filmImg {
   display: block;
   width: 88%;
-  height: 66%;
+  height: 63%;
   border-radius: 20px;
 }
 
@@ -378,6 +381,28 @@ footer {
   background-color: #121212;
   height: 300px;
   font-size: 20px;
+  /*
+  @keyframes color-change {
+	  0% { fill: #fff; }
+	  50% { fill: #f6b02d; }
+	  100% { fill: #fff; }
+  }
+  @keyframes rO-color-change {
+	0% { stroke: #f6b02d; }
+	50% { stroke: #fff; }
+	100% { stroke: #f6b02d; }
+	}
+  @keyframes reverse-color-change {
+	0% { fill: #f6b02d; }
+	50% { fill: #fff; }
+	100% { fill: #f6b02d; }
+	}
+	.letterK{animation: color-change 1s linear infinite;}
+	.letterN,.circleI{}
+	.letterO{}
+	.letterk{}
+	.lettera{}
+	*/
 }
 
 footer .footerWrap {

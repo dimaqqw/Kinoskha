@@ -235,6 +235,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -243,7 +246,7 @@ header {
 .filmImg {
   display: block;
   width: 88%;
-  height: auto;
+  height: 63%;
   border-radius: 20px;
 }
 
@@ -263,10 +266,11 @@ header {
           justify-content: space-evenly;
   width: 88%;
   background-color: #121212;
-  height: 8vh;
+  height: 30%;
   border-radius: 20px;
   margin-top: 10px;
-  padding: 10px 0;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .filmAge {
@@ -283,17 +287,26 @@ header {
   margin-top: 4%;
   background-color: #121212;
   width: 88%;
-  height: 5vh;
-  vertical-align: middle;
+  height: 10%;
+  padding: 1px 0;
   border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .buyBotton > a {
   display: block;
   position: relative;
   text-transform: uppercase;
-  text-align: center;
-  line-height: 5vh;
+  padding: 15px 0;
+  white-space: nowrap;
 }
 
 /*-----------------FOOTER-----------------------------*/
@@ -316,6 +329,7 @@ footer {
   background-color: #121212;
   height: 300px;
   font-size: 20px;
+  /*-------------*/
 }
 
 footer .footerWrap {
@@ -344,6 +358,7 @@ footer .footerWrap .fSection {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  white-space: nowrap;
 }
 
 footer .footerWrap .fSection ul {
@@ -362,5 +377,174 @@ footer .footerWrap .fSection ul {
 
 footer .footerWrap #firstS {
   text-transform: uppercase;
+}
+
+@media (max-width: 2566px) {
+  footer header .wrap .big_name {
+    font-size: 60px;
+  }
+  footer header .wrap ul li {
+    font-size: 32px;
+  }
+  footer .items_name {
+    font-size: 36px;
+  }
+  footer .item {
+    width: 22%;
+  }
+  footer .item .filmImg {
+    width: 88%;
+    max-width: 600px;
+  }
+  footer .description .filmAge {
+    font-size: 32px;
+  }
+  footer .description .filmName {
+    font-size: 36px;
+  }
+  footer .description .filmZhanr {
+    font-size: 32px;
+  }
+  footer .buyBotton {
+    font-size: 28px;
+  }
+  footer .aboutText p {
+    font-size: 34px;
+  }
+  footer footer {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1926px) {
+  header .wrap .big_name {
+    font-size: 60px;
+  }
+  header .wrap ul li {
+    font-size: 22px;
+  }
+  .description .filmAge {
+    font-size: 28px;
+  }
+  .description .filmName {
+    font-size: 24px;
+  }
+  .description .filmZhanr {
+    font-size: 22px;
+  }
+  .buyBotton {
+    font-size: 20px;
+  }
+  .aboutText p {
+    font-size: 22px;
+  }
+  footer {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1441px) {
+  header .wrap .big_name {
+    font-size: 40px;
+  }
+  header .wrap ul li {
+    font-size: 18px;
+  }
+  .items_name {
+    font-size: 30px;
+  }
+  .item {
+    width: 25%;
+  }
+  .description .filmAge {
+    font-size: 24px;
+  }
+  .description .filmName {
+    font-size: 17px;
+  }
+  .description .filmZhanr {
+    font-size: 17px;
+  }
+  .buyBotton {
+    font-size: 13px;
+  }
+  .aboutText p {
+    font-size: 24px;
+    line-height: 48px;
+  }
+  footer {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 769px) {
+  .menuBlock {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .row .item {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .aboutText {
+    margin: 20px 50px;
+  }
+  .aboutText p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  footer {
+    height: 100%;
+    padding: 40px 0;
+  }
+  footer .footerWrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footerWrap .fSection {
+    width: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px 0;
+  }
+  footer .footerWrap .fSection ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 426px) {
+  .nov, .bestselers, .aboutService {
+    width: 90%;
+  }
+  .aboutText {
+    margin: 20px 20px;
+  }
+  .aboutText p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  header .wrap .big_name {
+    font-size: 30px;
+  }
+  .description .filmZhanr {
+    font-size: 14px;
+  }
+  .buyBotton > a {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=blockFilms.css.map */

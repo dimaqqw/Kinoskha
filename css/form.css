@@ -36,19 +36,20 @@ a:hover {
 }
 
 /*----------------------HEADER----------------------*/
+/*----------------------HEADER----------------------*/
 header {
-  z-index: 11;
   position: relative;
+  width: 100%;
+  z-index: 11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 115px;
   background-color: #121212;
-  -webkit-box-orient: horizontal;
+  height: 115px;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .wrap {
@@ -152,12 +153,13 @@ header {
   padding: 12px 24px;
   color: #fff;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 400;
   text-decoration: none;
 }
 
 .menu__item:hover {
   background-color: #CFD8DC;
+  color: black;
 }
 
 #menu__toggle:checked ~ .menu__btn > span {
