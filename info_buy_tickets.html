@@ -2,18 +2,18 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" >
-	<title>Регистрация | Kinoshka.by</title>
-	<link rel="stylesheet" href="css/sign.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Как купить билет? | Kinoshka.by</title>
+	<link rel="stylesheet" href="css/footer-pages.css">
     <link rel="shortcut icon" href="pics/ico.png" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="superContainer">
-        <!--HEADER-->
-        <header>
+    <div class="superContainer">
+        <!---HEADER--->
+		<header>
             <div class="wrap">
                 <a href="index.html" class="big_name">Kinoshka.by</a>
                 <ul class="menuBlock">
@@ -36,43 +36,35 @@
                 </div>
             </div>
         </header>
-        <div class="wrap" id="wrapForm">
-            <div class="items_head">
-                <p class="items_name">Регистрация</p>
+        <!--AGE BLOCK-->
+        <div class="age-block">
+            <div class="age_head">
+                <h1 class="age_name">
+                    Покупка билетов               
+                </h1>
             </div>
-            <form action="">
-                <ul>
-                    <li>
-                      <label for="user_name">Имя пользователя</label>
-                      <input type="text" id="user_name" name="user_name">
-                    </li>
-                    <li>
-                      <label for="user_password">Пароль</label>
-                      <input type="password" id="user_password" name="user_passworw">
-                    </li>
-                    <li class="button">
-                        <label for="user_password">Подтвердите пароль</label>
-                      <input type="password" id="user_password" name="user_passworw">
-                    </li>
-                    <li  class="button">
-                        <button id="butt">Регистрация</button>
-                    </li>
-                    <script>
-                        let a = document.getElementById('butt');
-                        console.log(a);
-                        a.addEventListener('click', () => { 
-					    alert("Вы успешно зарегестрированны!");
-				        });
-                        
-                    </script>
-                  </ul>
-            </form>
+            <div class="wrapper">   
+                <!--HOW TO BUY TICKET -->
+                <div class="prohibitions"> 
+                    <p>Как купить билет?</p>  
+                    <ul>
+                        <li>Выберите фильм для просмотра.</li>
+                        <li>Нажмите на кнопку купить билет.</li>
+                        <li>Выберите кинотератр, дату и время посещения.</li>
+                        <li>Подтвердите покупку билета.</li>
+                        <li>Заполните форму.</li>
+                        <li>Подтвердите заказ по телефонному звонку.</li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="age-bottom"></div>
         </div>
-        <!------------------------------------FOOTER---------------------------------->
+        <!--FOOTER-->
         <footer>
             <div class="footerWrap">
                 <div id="firstS" class="fSection">
                     <p><a href="index.html">kinoshka.by</a></p>
+                </p>
                 </div>
                     <div class="fSection">
                         <p><a href="cinemas-page.html">Кинотеатры</a></p>
@@ -103,3 +95,4 @@
         </footer>
     </div>
 </body>
+</html>        

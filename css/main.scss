@@ -21,7 +21,7 @@ a:hover{
 .superContainer{
 	overflow: hidden;
 }
-/*----------------------HEADER----------------------*/
+/*HEADER*/
 header{
 	position: relative;
 	width: 100%;
@@ -257,6 +257,8 @@ header{
 	height: 60px;
 	background-color: #121212;
 }
+
+
 /*-----------------FOOTER-----------------------------*/
 footer{
 	display: flex;
@@ -290,28 +292,7 @@ footer{
       text-transform: uppercase;
     }
   }
-  /*
-  @keyframes color-change {
-	  0% { fill: #fff; }
-	  50% { fill: #f6b02d; }
-	  100% { fill: #fff; }
-  }
-  @keyframes rO-color-change {
-	0% { stroke: #f6b02d; }
-	50% { stroke: #fff; }
-	100% { stroke: #f6b02d; }
-	}
-  @keyframes reverse-color-change {
-	0% { fill: #f6b02d; }
-	50% { fill: #fff; }
-	100% { fill: #f6b02d; }
-	}
-	.letterK{animation: color-change 1s linear infinite;}
-	.letterN,.circleI{}
-	.letterO{}
-	.letterk{}
-	.lettera{}
-	*/
+
 }
 @media (max-width:2566px) {
 	header{

@@ -235,6 +235,10 @@ header {
   margin: auto;
 }
 
+.mainContent p {
+  width: 88%;
+}
+
 .image {
   border-radius: 15px;
 }
@@ -261,6 +265,12 @@ header {
 .mainDescription > p {
   font-size: 20px;
   padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .textDescription {
@@ -566,7 +576,7 @@ footer .footerWrap #firstS {
     font-size: 18px;
   }
   .mainDescription > p {
-    font-size: 18px;
+    font-size: 13px;
   }
   figcaption {
     font-size: 24px;
@@ -716,6 +726,7 @@ footer .footerWrap #firstS {
     height: 45px;
   }
   .mainDescription > p {
+    width: 30%;
     font-size: 10px;
   }
   .textDescription > p {
