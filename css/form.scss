@@ -24,7 +24,6 @@ a:hover{
   min-height: 100vh;
 }
 /*----------------------HEADER----------------------*/
-/*----------------------HEADER----------------------*/
 header{
 	position: relative;
 	width: 100%;
@@ -246,7 +245,9 @@ footer{
         justify-content: space-evenly;
       }
     }
-    #firstS{
+    #firstS {
+      display: flex;
+      align-items: center;
       text-transform: uppercase;
     }
   }
@@ -321,6 +322,9 @@ footer{
   }
   button{
     font-size: 14px;
+  }
+  .animate-logo{
+    margin-top: 35px;
   }
 	footer{
 		height: 100%;

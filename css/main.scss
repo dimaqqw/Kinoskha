@@ -1,69 +1,69 @@
 /*-----------------------ALL----------------------*/
-*{
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	color: #fff;
-	font-family: 'Noto Sans', sans-serif;
-	font-weight: 300;
-	box-sizing: border-box;
-	list-style-type: none;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  list-style-type: none;
 }
-body{
-	background-color: #474747;
+body {
+  background-color: #474747;
 }
-a{
-	transition: 0.15s color;
+a {
+  transition: 0.15s color;
 }
-a:hover{
-	color: #f6b02d;
+a:hover {
+  color: #f6b02d;
 }
-.superContainer{
-	overflow: hidden;
+.superContainer {
+  overflow: hidden;
 }
 /*HEADER*/
-header{
-	position: relative;
-	width: 100%;
-	z-index: 11;
-	display: flex;
-	background-color: #121212;
-	height: 115px;
-	flex-direction: column;	
+header {
+  position: relative;
+  width: 100%;
+  z-index: 11;
+  display: flex;
+  background-color: #121212;
+  height: 115px;
+  flex-direction: column;
 }
-.wrap{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 80%;
-    margin: auto;
+.wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  margin: auto;
 }
-.big_name{
-	font-size: 56px;
-  	text-transform: uppercase;
+.big_name {
+  font-size: 56px;
+  text-transform: uppercase;
 }
-.menuBlock{
+.menuBlock {
   display: flex;
   width: 76%;
   justify-content: space-around;
 }
-.hamburger-menu{
-    display: none;
-    width: 70%;
+.hamburger-menu {
+  display: none;
+  width: 70%;
 }
-#menu__toggle{
-    display: none;
+#menu__toggle {
+  display: none;
 }
-.menu__btn{
-    display: flex; /* используем flex для центрирования содержимого */
-    align-items: center;  /* центрируем содержимое кнопки */
-    position: absolute;
-    top: 44px;
-    right: 30px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 12;
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center; /* центрируем содержимое кнопки */
+  position: absolute;
+  top: 44px;
+  right: 30px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 12;
 }
 /* добавляем "гамбургер" */
 .menu__btn > span,
@@ -76,399 +76,404 @@ header{
   background-color: #fff;
 }
 .menu__btn > span::before {
-  content: '';
+  content: "";
   top: -8px;
 }
 .menu__btn > span::after {
-  content: '';
+  content: "";
   top: 8px;
 }
 /* контейнер меню */
 .menu__box {
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    text-align: center;
-    background-color: #121212;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  }
-  /* элементы меню */
-  .menu__item {
-    display: block;
-    padding: 12px 24px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 400;
-    text-decoration: none;
-  }
-  .menu__item:hover {
-    background-color: #CFD8DC;
-	color: black;
-  }
-  #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    right: 0;
-    left: auto;
-  }
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #121212;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+}
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #cfd8dc;
+  color: black;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  right: 0;
+  left: auto;
+}
 /*--------------------NOVINKI+ROW+ITEMS------------------------*/
-.nov{
-	z-index: 1;
-	position: relative;
-	width: 80%;
-	display: block;
-	background-color: #343434;
-	margin: auto;	
-	border-radius: 50px;
-	margin-top: 50px;
-	padding-bottom: 50px;
-	margin-bottom: 50px;
+.nov {
+  z-index: 1;
+  position: relative;
+  width: 80%;
+  display: block;
+  background-color: #343434;
+  margin: auto;
+  border-radius: 50px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
-.items_head{
-	z-index: 11;
-	margin: auto;
-	background-color: #121212;
+.items_head {
+  z-index: 11;
+  margin: auto;
+  background-color: #121212;
 }
-.items_name{
-	display: flex;
-	height: 100%;
-	justify-content: center;
-	align-items: center;
-	font-size: 30px;
-	text-transform: uppercase;
-	color: #f6b02d;
-	padding: 15px 0;
+.items_name {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #f6b02d;
+  padding: 15px 0;
 }
-.row{
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: space-around;
-	margin: auto;
-	margin-top: 50px;
-	width: 94%;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 50px;
+  width: 94%;
 }
-.item{
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	align-items: center;
+.item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
-.filmImg{
-	display: block;
-	width: 88%;
-	height: 63%;
-	border-radius: 20px;
+.filmImg {
+  display: block;
+  width: 88%;
+  height: 63%;
+  border-radius: 20px;
 }
-.description{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-	width: 88%;
-	background-color: #121212;
-	height: 30%;
-	border-radius: 20px;
-	margin-top: 10px;
-	padding: 20px 0;
-	text-align: center;
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 88%;
+  background-color: #121212;
+  height: 30%;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 20px 0;
+  text-align: center;
 }
-.filmAge{
-	font-weight: 100;
+.filmAge {
+  font-weight: 100;
 }
-.filmName{
-	font-size: 20px;
-	font-weight: 300;
-	color: #f6b02d;
+.filmName {
+  font-size: 20px;
+  font-weight: 300;
+  color: #f6b02d;
 }
-.buyBotton{
-	margin-top: 4%;
-	background-color: #121212;
-	width: 88%;
-	height: 10%;
-	padding: 1px 0;
-	border-radius: 30px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.buyBotton {
+  margin-top: 4%;
+  background-color: #121212;
+  width: 88%;
+  height: 10%;
+  padding: 1px 0;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.buyBotton > a{
-	display: block;
-	position: relative;
-	text-transform: uppercase;
-	padding: 15px 0;
-	white-space: nowrap;
+.buyBotton > a {
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  padding: 15px 0;
+  white-space: nowrap;
 }
 /*------------------BESTSELLERS----------------------------*/
-.bestselers{
-	z-index: 1;
-	position: relative;
-	width: 80%;
-	display: block;
-	background-color: #343434;
-	margin: auto;
-	margin-top: 50px;	
-	border-radius: 50px;
-	padding-bottom: 50px;
+.bestselers {
+  z-index: 1;
+  position: relative;
+  width: 80%;
+  display: block;
+  background-color: #343434;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 50px;
+  padding-bottom: 50px;
 }
 /*-----------------ABOUT-----------------------------*/
-.aboutService{
-	z-index: 1;
-	position: relative;
-	width: 80%;
-	display: block;
-	background-color: #343434;
-	margin: 40px auto;	
-	border-radius: 50px;
+.aboutService {
+  z-index: 1;
+  position: relative;
+  width: 80%;
+  display: block;
+  background-color: #343434;
+  margin: 40px auto;
+  border-radius: 50px;
 }
-.aboutText{
-	margin: 20px 100px;	
+.aboutText {
+  margin: 20px 100px;
 }
-.aboutText > p{
-	letter-spacing: 1px;
-	font-size: 20px;
-	line-height: 60px;
-	/*text-align: center;*/
+.aboutText > p {
+  letter-spacing: 1px;
+  font-size: 20px;
+  line-height: 60px;
+  /*text-align: center;*/
 }
-.boldWord{
-	font-weight: 400;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	color: #f6b02d;
+.boldWord {
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f6b02d;
 }
-.aboutBottom{
-	height: 60px;
-	background-color: #121212;
+.aboutBottom {
+  height: 60px;
+  background-color: #121212;
 }
-
 
 /*-----------------FOOTER-----------------------------*/
-footer{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-  	align-items: center;
-	margin-top: auto;
- 	width: 100%;
-	background-color: #121212;
-	height: 300px;
-	font-size: 20px;
-  .footerWrap{
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  width: 100%;
+  background-color: #121212;
+  height: 300px;
+  font-size: 20px;
+  .footerWrap {
     display: flex;
     flex-direction: row;
     width: 80%;
     height: 76%;
     justify-content: space-evenly;
-    .fSection{
+    .fSection {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-	  white-space: nowrap;
-      ul{
+      white-space: nowrap;
+      ul {
         height: 80%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
       }
     }
-    #firstS{
+    #firstS {
+      display: flex;
+      align-items: center;
       text-transform: uppercase;
     }
   }
-
 }
-@media (max-width:2566px) {
-	header{
-		.wrap{
-			.big_name{
-				font-size: 60px;
-			}
-			ul{
-				li{
-					font-size: 32px;
-				}
-			}
-		}
-	}
-	.items_name{
-		font-size: 36px;
-	}
-	.item{
-		width: 22%;
-		.filmImg{
-			width: 88%;
-			max-width: 600px;
-		}
-	}
-	.description{
-		.filmAge{
-			font-size: 32px;
-		}
-		.filmName{
-			font-size: 36px;
-		}
-		.filmZhanr{
-			font-size: 32px;
-		}
-	}
-	.buyBotton{
-		font-size: 28px;
-	}
-	.aboutText p{
-		font-size: 34px;
-	}
-	footer{
-		font-size: 32px;
-	}
+@media (max-width: 2566px) {
+  header {
+    .wrap {
+      .big_name {
+        font-size: 60px;
+      }
+      ul {
+        li {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+  .items_name {
+    font-size: 36px;
+  }
+  .item {
+    width: 22%;
+    .filmImg {
+      width: 88%;
+      max-width: 600px;
+    }
+  }
+  .description {
+    .filmAge {
+      font-size: 32px;
+    }
+    .filmName {
+      font-size: 36px;
+    }
+    .filmZhanr {
+      font-size: 32px;
+    }
+  }
+  .buyBotton {
+    font-size: 28px;
+  }
+  .aboutText p {
+    font-size: 34px;
+  }
+  footer {
+    font-size: 32px;
+  }
 }
-@media (max-width:1926px) {
-	header{
-		.wrap{
-			.big_name{
-				font-size: 60px;
-			}
-			ul{
-				li{
-					font-size: 22px;
-				}
-			}
-		}
-	}
-	.description{
-		.filmAge{
-			font-size: 28px;
-		}
-		.filmName{
-			font-size: 24px;
-		}
-		.filmZhanr{
-			font-size: 22px;
-		}
-	}
-	.buyBotton{
-		font-size: 20px;
-	}
-	.aboutText p{
-		font-size: 22px;
-	}
-	footer{
-		font-size: 22px;
-	}
+@media (max-width: 1926px) {
+  header {
+    .wrap {
+      .big_name {
+        font-size: 60px;
+      }
+      ul {
+        li {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  .description {
+    .filmAge {
+      font-size: 28px;
+    }
+    .filmName {
+      font-size: 24px;
+    }
+    .filmZhanr {
+      font-size: 22px;
+    }
+  }
+  .buyBotton {
+    font-size: 20px;
+  }
+  .aboutText p {
+    font-size: 22px;
+  }
+  footer {
+    font-size: 22px;
+  }
 }
-@media (max-width:1441px) {
-	header{
-		.wrap{
-			.big_name{
-				font-size: 40px;
-			}
-			ul{
-				li{
-					font-size: 18px;
-				}
-			}
-		}
-	}
-	.items_name{
-		font-size: 30px;
-	}
-	.item{
-		width: 25%;
-	}
-	.description{
-		.filmAge{
-			font-size: 24px;
-		}
-		.filmName{
-			font-size: 17px;
-		}
-		.filmZhanr{
-			font-size: 17px;
-		}
-	}
-	.buyBotton{
-		font-size: 17px;
-	}
-	.aboutText p{
-		font-size: 24px;
-		line-height: 48px;
-	}
-	footer{
-		font-size: 20px;
-	}
+@media (max-width: 1441px) {
+  header {
+    .wrap {
+      .big_name {
+        font-size: 40px;
+      }
+      ul {
+        li {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .items_name {
+    font-size: 30px;
+  }
+  .item {
+    width: 25%;
+  }
+  .description {
+    .filmAge {
+      font-size: 24px;
+    }
+    .filmName {
+      font-size: 17px;
+    }
+    .filmZhanr {
+      font-size: 17px;
+    }
+  }
+  .buyBotton {
+    font-size: 17px;
+  }
+  .aboutText p {
+    font-size: 24px;
+    line-height: 48px;
+  }
+  footer {
+    font-size: 20px;
+  }
 }
-@media (max-width:769px) {
-	.menuBlock{
-		display: none;
-	}
-	.hamburger-menu{
-		display: block;
-	}
-	.row{
-		flex-wrap: wrap;
-		.item{
-			width: 50%;
-			margin-bottom: 30px;
-		}
-	}
-	.aboutText{
-		margin: 20px 50px;
-	}
-	.aboutText p{
-		font-size: 20px;
-		line-height: 40px;
-	}
-	footer{
-		height: 100%;
-		padding: 40px 0;
-		.footerWrap{
-			flex-direction: column;
-			align-items: center;
-			.fSection{
-				width: 50%;
-				align-items: center;
-				margin: 20px 0;
-				ul{
-					align-items: center;
-				}
-			}
-		}
-	}
+@media (max-width: 769px) {
+  .menuBlock {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .row {
+    flex-wrap: wrap;
+    .item {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+  .aboutText {
+    margin: 20px 50px;
+  }
+  .aboutText p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .animate-logo{
+    margin-top: 35px;
+  }
+  footer {
+    height: 100%;
+    padding: 40px 0;
+    .footerWrap {
+      flex-direction: column;
+      align-items: center;
+      .fSection {
+        width: 50%;
+        align-items: center;
+        margin: 20px 0;
+        ul {
+          align-items: center;
+        }
+      }
+    }
+  }
 }
-@media (max-width:426px) {
-	.nov, .bestselers, .aboutService{
-		width: 90%;
-	}
-	.aboutText{
-		margin: 20px 20px;
-	}
-	.aboutText p{
-		font-size: 15px;
-		line-height: 25px;
-	}
-	header .wrap .big_name{
-		font-size: 30px;
-	}
-	.description .filmZhanr{
-		font-size: 14px;
-	}
-	.buyBotton > a {
-		font-size: 12px;
-	}
+@media (max-width: 426px) {
+  .nov,
+  .bestselers,
+  .aboutService {
+    width: 90%;
+  }
+  .aboutText {
+    margin: 20px 20px;
+  }
+  .aboutText p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  header .wrap .big_name {
+    font-size: 30px;
+  }
+  .description .filmZhanr {
+    font-size: 14px;
+  }
+  .buyBotton > a {
+    font-size: 12px;
+  }
 }

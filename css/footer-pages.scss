@@ -226,6 +226,8 @@ footer {
       }
     }
     #firstS {
+      display: flex;
+      align-items: center;
       text-transform: uppercase;
     }
   }
@@ -380,6 +382,9 @@ footer {
       width: 88%;
       margin: auto;
     }
+  }
+  .animate-logo{
+    margin-top: 35px;
   }
   footer {
     height: 100%;

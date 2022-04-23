@@ -242,9 +242,11 @@ footer{
         justify-content: space-evenly;
       }
     }
-    #firstS{
-      text-transform: uppercase;
-    }
+    #firstS {
+		display: flex;
+		align-items: center;
+		text-transform: uppercase;
+	}
   }
 /*-------------*/
 @media (max-width:2566px) {
@@ -388,6 +390,9 @@ footer{
 		font-size: 20px;
 		line-height: 40px;
 	}
+	.animate-logo{
+		margin-top: 35px;
+	  }
 	footer{
 		height: 100%;
 		padding: 40px 0;

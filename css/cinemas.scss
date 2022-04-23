@@ -222,7 +222,9 @@ footer{
         justify-content: space-evenly;
       }
     }
-    #firstS{
+    #firstS {
+      display: flex;
+      align-items: center;
       text-transform: uppercase;
     }
   }
@@ -319,6 +321,9 @@ footer{
     img{
       width: 88%;
     }
+  }
+  .animate-logo{
+    margin-top: 35px;
   }
 	footer{
 		height: 100%;

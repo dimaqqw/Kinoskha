@@ -5,7 +5,7 @@
   padding: 0;
   text-decoration: none;
   color: #fff;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 300;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -113,12 +113,12 @@ header {
 }
 
 .menu__btn > span::before {
-  content: '';
+  content: "";
   top: -8px;
 }
 
 .menu__btn > span::after {
-  content: '';
+  content: "";
   top: 8px;
 }
 
@@ -151,7 +151,7 @@ header {
 }
 
 .menu__item:hover {
-  background-color: #CFD8DC;
+  background-color: #cfd8dc;
   color: black;
 }
 
@@ -427,6 +427,12 @@ footer .footerWrap .fSection ul {
 }
 
 footer .footerWrap #firstS {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
 }
 
@@ -550,6 +556,9 @@ footer .footerWrap #firstS {
     font-size: 20px;
     line-height: 40px;
   }
+  .animate-logo {
+    margin-top: 35px;
+  }
   footer {
     height: 100%;
     padding: 40px 0;
@@ -578,7 +587,9 @@ footer .footerWrap #firstS {
 }
 
 @media (max-width: 426px) {
-  .nov, .bestselers, .aboutService {
+  .nov,
+  .bestselers,
+  .aboutService {
     width: 90%;
   }
   .aboutText {
