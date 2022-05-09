@@ -1,5 +1,11 @@
 @charset "UTF-8";
 /*-----------------------ALL----------------------*/
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  src: url(../fonts/NotoSans.woff) format("woff");
+}
+
 * {
   margin: 0;
   padding: 0;

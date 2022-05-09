@@ -1,14 +1,7 @@
-//date block 1
 let i1 = 0;
-let i2 = 0;
-let i3 = 0;
-let i4 = 0;
-let i5 = 0;
-let i6 = 0;
-let i7 = 0;
-//////////////////////////////////////////////
-let blckDt = document.getElementById('blockDate');
-let pBlckDt = document.getElementById('pBlockDate');
+
+let  = document.getElementsByClassName('');
+let  = document.getElementById('');
 console.log(blckDt);
 console.log(pBlckDt);
 blckDt.addEventListener('click', () => {

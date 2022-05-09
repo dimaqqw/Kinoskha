@@ -1,5 +1,12 @@
 /*-----------------------ALL----------------------*/
-*{
+@font-face {
+	font-family: 'Noto Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: url(../fonts/NotoSans.woff) format('woff');
+}
+
+* {
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
@@ -8,20 +15,25 @@
 	font-weight: 300;
 	list-style-type: none;
 }
-body{
+
+body {
 	background-color: #474747;
 }
-a{
+
+a {
 	transition: 0.15s color;
 }
-a:hover{
+
+a:hover {
 	color: #f6b02d;
 }
-.superContainer{
+
+.superContainer {
 	overflow: hidden;
 }
+
 /*----------------------HEADER----------------------*/
-header{
+header {
 	z-index: 11;
 	position: relative;
 	display: flex;
@@ -30,122 +42,143 @@ header{
 	background-color: #121212;
 	flex-direction: row;
 }
-.wrap{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 80%;
-    margin: auto;
+
+.wrap {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 80%;
+	margin: auto;
 }
-.big_name{
+
+.big_name {
 	font-size: 56px;
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
-.menuBlock{
-  display: flex;
-  width: 76%;
-  justify-content: space-around;
+
+.menuBlock {
+	display: flex;
+	width: 76%;
+	justify-content: space-around;
 }
-.hamburger-menu{
-    display: none;
-    width: 70%;
+
+.hamburger-menu {
+	display: none;
+	width: 70%;
 }
-#menu__toggle{
-    display: none;
+
+#menu__toggle {
+	display: none;
 }
-.menu__btn{
-    display: flex; /* используем flex для центрирования содержимого */
-    align-items: center;  /* центрируем содержимое кнопки */
-    position: absolute;
-    top: 44px;
-    right: 30px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 12;
+
+.menu__btn {
+	display: flex;
+	/* используем flex для центрирования содержимого */
+	align-items: center;
+	/* центрируем содержимое кнопки */
+	position: absolute;
+	top: 44px;
+	right: 30px;
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	z-index: 12;
 }
+
 /* добавляем "гамбургер" */
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
 }
-.menu__btn > span::before {
-  content: '';
-  top: -8px;
+
+.menu__btn>span::before {
+	content: '';
+	top: -8px;
 }
-.menu__btn > span::after {
-  content: '';
-  top: 8px;
+
+.menu__btn>span::after {
+	content: '';
+	top: 8px;
 }
+
 /* контейнер меню */
 .menu__box {
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    text-align: center;
-    background-color: #121212;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  }
-  /* элементы меню */
-  .menu__item {
-    display: block;
-    padding: 12px 24px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 400;
-    text-decoration: none;
-  }
-  .menu__item:hover {
-    background-color: #CFD8DC;
+	display: block;
+	position: fixed;
+	visibility: hidden;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 80px 0;
+	list-style: none;
+	text-align: center;
+	background-color: #121212;
+	box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+/* элементы меню */
+.menu__item {
+	display: block;
+	padding: 12px 24px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.menu__item:hover {
+	background-color: #CFD8DC;
 	color: black;
-  }
-  #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    right: 0;
-    left: auto;
-  }
-  /*-------------------------------------*/
-  .films{
-    z-index: 1;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+	transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+	top: 0;
+	transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+	top: 0;
+	transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+	visibility: visible;
+	right: 0;
+	left: auto;
+}
+
+/*-------------------------------------*/
+.films {
+	z-index: 1;
 	position: relative;
 	width: 80%;
 	display: block;
 	background-color: #343434;
-	margin: auto;	
+	margin: auto;
 	border-radius: 50px;
 	margin-top: 5vh;
 	padding-bottom: 50px;
 	margin-bottom: 5vh;
-  }
-  .items_head{
+}
+
+.items_head {
 	z-index: 11;
 	margin: auto;
 	background-color: #121212;
 }
-.items_name{
+
+.items_name {
 	display: flex;
 	height: 60px;
 	justify-content: center;
@@ -154,7 +187,8 @@ header{
 	text-transform: uppercase;
 	color: #f6b02d;
 }
-  .row{
+
+.row {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -162,19 +196,22 @@ header{
 	margin-top: 50px;
 	width: 88%;
 }
-.item{
+
+.item {
 	display: flex;
 	flex-direction: column;
-  justify-content: space-between;
+	justify-content: space-between;
 	align-items: center;
 }
-.filmImg{
+
+.filmImg {
 	display: block;
 	width: 88%;
 	height: 63%;
 	border-radius: 20px;
 }
-.description{
+
+.description {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -187,247 +224,305 @@ header{
 	padding: 20px 0;
 	text-align: center;
 }
-.filmAge{
+
+.filmAge {
 	font-weight: 100;
 }
-.filmName{
+
+.filmName {
 	font-size: 20px;
 	font-weight: 300;
 	color: #f6b02d;
 }
-.buyBotton{
+
+.buyBotton {
 	margin-top: 4%;
-  background-color: #121212;
-  width: 88%;
-  height: 10%;
-  padding: 1px 0;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	background-color: #121212;
+	width: 88%;
+	height: 10%;
+	padding: 1px 0;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-.buyBotton > a{
+
+.buyBotton>a {
 	display: block;
-  position: relative;
-  text-transform: uppercase;
-  padding: 15px 0;
-  white-space: nowrap;
+	position: relative;
+	text-transform: uppercase;
+	padding: 15px 0;
+	white-space: nowrap;
 }
+
 /*-----------------FOOTER-----------------------------*/
-footer{
+footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-  	align-items: center;
+	align-items: center;
 	margin-top: auto;
- 	width: 100%;
+	width: 100%;
 	background-color: #121212;
 	height: 300px;
 	font-size: 20px;
-  .footerWrap{
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    height: 76%;
-    justify-content: space-evenly;
-    .fSection{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-	  white-space: nowrap;
-      ul{
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-      }
-    }
-    #firstS {
+
+	.footerWrap {
 		display: flex;
-		align-items: center;
-		text-transform: uppercase;
-	}
-  }
-/*-------------*/
-@media (max-width:2566px) {
-	header{
-		.wrap{
-			.big_name{
-				font-size: 60px;
+		flex-direction: row;
+		width: 80%;
+		height: 76%;
+		justify-content: space-evenly;
+
+		.fSection {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			white-space: nowrap;
+
+			ul {
+				height: 80%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
 			}
-			ul{
-				li{
-					font-size: 32px;
+		}
+
+		#firstS {
+			display: flex;
+			align-items: center;
+			text-transform: uppercase;
+		}
+	}
+
+	/*-------------*/
+	@media (max-width:2566px) {
+		header {
+			.wrap {
+				.big_name {
+					font-size: 60px;
+				}
+
+				ul {
+					li {
+						font-size: 32px;
+					}
 				}
 			}
 		}
-	}
-	.items_name{
-		font-size: 36px;
-	}
-	.item{
-		width: 22%;
-		.filmImg{
-			width: 88%;
-			max-width: 600px;
-		}
-	}
-	.description{
-		.filmAge{
-			font-size: 32px;
-		}
-		.filmName{
+
+		.items_name {
 			font-size: 36px;
 		}
-		.filmZhanr{
+
+		.item {
+			width: 22%;
+
+			.filmImg {
+				width: 88%;
+				max-width: 600px;
+			}
+		}
+
+		.description {
+			.filmAge {
+				font-size: 32px;
+			}
+
+			.filmName {
+				font-size: 36px;
+			}
+
+			.filmZhanr {
+				font-size: 32px;
+			}
+		}
+
+		.buyBotton {
+			font-size: 28px;
+		}
+
+		.aboutText p {
+			font-size: 34px;
+		}
+
+		footer {
 			font-size: 32px;
 		}
 	}
-	.buyBotton{
-		font-size: 28px;
-	}
-	.aboutText p{
-		font-size: 34px;
-	}
-	footer{
-		font-size: 32px;
-	}
 }
-}
+
 @media (max-width:1926px) {
-	header{
-		.wrap{
-			.big_name{
+	header {
+		.wrap {
+			.big_name {
 				font-size: 60px;
 			}
-			ul{
-				li{
+
+			ul {
+				li {
 					font-size: 22px;
 				}
 			}
 		}
 	}
-	.description{
-		.filmAge{
+
+	.description {
+		.filmAge {
 			font-size: 28px;
 		}
-		.filmName{
+
+		.filmName {
 			font-size: 24px;
 		}
-		.filmZhanr{
+
+		.filmZhanr {
 			font-size: 22px;
 		}
 	}
-	.buyBotton{
+
+	.buyBotton {
 		font-size: 20px;
 	}
-	.aboutText p{
+
+	.aboutText p {
 		font-size: 22px;
 	}
-	footer{
+
+	footer {
 		font-size: 22px;
 	}
 }
+
 @media (max-width:1441px) {
-	header{
-		.wrap{
-			.big_name{
+	header {
+		.wrap {
+			.big_name {
 				font-size: 40px;
 			}
-			ul{
-				li{
+
+			ul {
+				li {
 					font-size: 18px;
 				}
 			}
 		}
 	}
-	.items_name{
+
+	.items_name {
 		font-size: 30px;
 	}
-	.item{
+
+	.item {
 		width: 25%;
 	}
-	.description{
-		.filmAge{
+
+	.description {
+		.filmAge {
 			font-size: 24px;
 		}
-		.filmName{
+
+		.filmName {
 			font-size: 17px;
 		}
-		.filmZhanr{
+
+		.filmZhanr {
 			font-size: 17px;
 		}
 	}
-	.buyBotton{
+
+	.buyBotton {
 		font-size: 13px;
 	}
-	.aboutText p{
+
+	.aboutText p {
 		font-size: 24px;
 		line-height: 48px;
 	}
-	footer{
+
+	footer {
 		font-size: 20px;
 	}
 }
+
 @media (max-width:769px) {
-	.menuBlock{
+	.menuBlock {
 		display: none;
 	}
-	.hamburger-menu{
+
+	.hamburger-menu {
 		display: block;
 	}
-	.row{
+
+	.row {
 		flex-wrap: wrap;
-		.item{
+
+		.item {
 			width: 50%;
 			margin-bottom: 30px;
 		}
 	}
-	.aboutText{
+
+	.aboutText {
 		margin: 20px 50px;
 	}
-	.aboutText p{
+
+	.aboutText p {
 		font-size: 20px;
 		line-height: 40px;
 	}
-	.animate-logo{
+
+	.animate-logo {
 		margin-top: 35px;
-	  }
-	footer{
+	}
+
+	footer {
 		height: 100%;
 		padding: 40px 0;
-		.footerWrap{
+
+		.footerWrap {
 			flex-direction: column;
 			align-items: center;
-			.fSection{
+
+			.fSection {
 				width: 50%;
 				align-items: center;
 				margin: 20px 0;
-				ul{
+
+				ul {
 					align-items: center;
 				}
 			}
 		}
 	}
 }
+
 @media (max-width:426px) {
-	.nov, .bestselers, .aboutService{
+
+	.nov,
+	.bestselers,
+	.aboutService {
 		width: 90%;
 	}
-	.aboutText{
+
+	.aboutText {
 		margin: 20px 20px;
 	}
-	.aboutText p{
+
+	.aboutText p {
 		font-size: 15px;
 		line-height: 25px;
 	}
-	header .wrap .big_name{
+
+	header .wrap .big_name {
 		font-size: 30px;
 	}
-	.description .filmZhanr{
+
+	.description .filmZhanr {
 		font-size: 14px;
 	}
-	.buyBotton > a {
+
+	.buyBotton>a {
 		font-size: 12px;
 	}
 }

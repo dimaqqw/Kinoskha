@@ -1,5 +1,11 @@
 @charset "UTF-8";
 /*-----------------------ALL----------------------*/
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  src: url(../fonts/NotoSans.woff) format("woff");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -296,6 +302,20 @@ header {
   margin-top: 30px;
 }
 
+.activeFilm {
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
+}
+
+.activeText {
+  color: #f6b02d;
+}
+
+.activeDateText {
+  color: #f6b02d;
+  font-size: 1.3em;
+}
+
 .chIMG {
   width: 33vw;
   height: 23vw;
@@ -387,7 +407,8 @@ figcaption {
   margin-top: 3vh;
 }
 
-.dateBlock, .timeBlock {
+.dateBlock,
+.timeBlock {
   font-size: 2vh;
   width: 88%;
 }
@@ -421,7 +442,6 @@ figcaption {
 
 .date:hover > p {
   color: #f6b02d;
-  font-size: 3.5vh;
 }
 
 .buyButton {
@@ -593,7 +613,8 @@ footer .footerWrap #firstS {
   footer {
     font-size: 20px;
   }
-  .dateBlock, .timeBlock {
+  .dateBlock,
+  .timeBlock {
     font-size: 18px;
   }
 }
@@ -682,7 +703,8 @@ footer .footerWrap #firstS {
     font-size: 18px;
     margin-top: 30px;
   }
-  .dateBlock, .timeBlock {
+  .dateBlock,
+  .timeBlock {
     font-size: 12px;
   }
   .animate-logo {
@@ -745,7 +767,8 @@ footer .footerWrap #firstS {
   figcaption {
     font-size: 18px;
   }
-  .dateBlock, .timeBlock {
+  .dateBlock,
+  .timeBlock {
     font-size: 9px;
   }
 }

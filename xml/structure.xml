@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MAIN>	
+	<FILMS>
+		<NOVELTIES>
+			<FILM>
+				<IMG>pics/films/anch.jpeg</IMG>
+				<NAME>Анчартед</NAME>
+				<GENRE>боевик, приключения</GENRE>
+				<AGE>12+</AGE>
+			</FILM>
+			<FILM>
+				<IMG>pics/films/anch.jpeg</IMG>
+				<NAME>Анчартед</NAME>
+				<GENRE>боевик, приключения</GENRE>
+				<AGE>12+</AGE>
+			</FILM>
+			<FILM>
+				<IMG>pics/films/anch.jpeg</IMG>
+				<NAME>Анчартед</NAME>
+				<GENRE>боевик, приключения</GENRE>
+				<AGE>12+</AGE>
+			</FILM>
+			<FILM>
+				<IMG>pics/films/anch.jpeg</IMG>
+				<NAME>Анчартед</NAME>
+				<GENRE>боевик, приключения</GENRE>
+				<AGE>12+</AGE>
+			</FILM>
+			<FILM>
+				<IMG>pics/films/anch.jpeg</IMG>
+				<NAME>Анчартед</NAME>
+				<GENRE>боевик, приключения</GENRE>
+				<AGE>12+</AGE>
+			</FILM>
+			<FILM>
+				<IMG>pics/films/anch.jpeg</IMG>
+				<NAME>Анчартед</NAME>
+				<GENRE>боевик, приключения</GENRE>
+				<AGE>12+</AGE>
+			</FILM>
+			<FILM>
+				<IMG>pics/films/anch.jpeg</IMG>
+				<NAME>Анчартед</NAME>
+				<GENRE>боевик, приключения</GENRE>
+				<AGE>12+</AGE>
+			</FILM>
+			<FILM>
+				<IMG>pics/films/anch.jpeg</IMG>
+				<NAME>Анчартед</NAME>
+				<GENRE>боевик, приключения</GENRE>
+				<AGE>12+</AGE>
+			</FILM>
+		</NOVELTIES>
+		<BESTESELLERS>
+			<FILM>
+				<IMG>pics/films/anch.jpeg</IMG>
+				<NAME>Анчартед</NAME>
+				<GENRE>боевик, приключения</GENRE>
+				<AGE>12+</AGE>
+			</FILM>
+			<FILM>
+				<IMG>pics/films/anch.jpeg</IMG>
+				<NAME>Анчартед</NAME>
+				<GENRE>боевик, приключения</GENRE>
+				<AGE>12+</AGE>
+			</FILM>
+			<FILM>
+				<IMG>pics/films/anch.jpeg</IMG>
+				<NAME>Анчартед</NAME>
+				<GENRE>боевик, приключения</GENRE>
+				<AGE>12+</AGE>
+			</FILM>
+			<FILM>
+				<IMG>pics/films/anch.jpeg</IMG>
+				<NAME>Анчартед</NAME>
+				<GENRE>боевик, приключения</GENRE>
+				<AGE>12+</AGE>
+			</FILM>
+		</BESTESELLERS>
+	</FILMS>
+</MAIN>
